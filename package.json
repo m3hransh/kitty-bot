@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "ts-node-dev --no-notify --respawn --transpile-only src/index",
-    "start": "node dist/index",
+    "dev": "ts-node-dev -r dotenv/config --no-notify --respawn --transpile-only src/index",
+    "start": "node -r dotenv/config dist/index",
     "clean": "rm -rf dist",
     "build": "npm -s run clean && tsc"
   },
@@ -19,5 +19,10 @@
     "ts-node": "^10.1.0",
     "ts-node-dev": "^1.1.8",
     "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "discord.js": "^12.5.3",
+    "dotenv": "^10.0.0",
+    "mongoose": "^5.13.3"
   }
 }
