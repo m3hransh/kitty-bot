@@ -4,7 +4,7 @@ import { MessageEmbed } from 'discord.js';
 
 export const thirtyDays: CommandInt = {
   name: '30',
-  description: 'Creates a 30 days Wirting challenge',
+  description: 'Creates a 30 days Writing challenge',
   run: async (message) => {
     const { author, channel, content } = message;
     const text = content.split(' ').slice(1).join(' ');
